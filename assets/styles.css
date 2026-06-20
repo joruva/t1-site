@@ -182,11 +182,14 @@ section { padding:88px 0; }
 .portrait-band { display:grid; grid-template-columns:300px 1fr; gap:48px; align-items:start; }
 .portrait {
   background:var(--navy); border-radius:16px; aspect-ratio:1/1.18; display:flex; align-items:flex-end;
-  padding:24px; color:#fff; position:relative; overflow:hidden;
+  padding:22px; color:#fff; position:relative; overflow:hidden; box-shadow:var(--shadow-md);
 }
-.portrait::before { content:""; position:absolute; inset:0; background:radial-gradient(90% 70% at 70% 10%, rgba(202,138,4,0.22), transparent 60%); }
-.portrait .initials { position:relative; font-size:3.4rem; font-weight:800; letter-spacing:-0.04em; opacity:.18; line-height:1; }
-.portrait .who { position:relative; }
+.portrait img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 18%; }
+.portrait::after {
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(to top, rgba(15,23,42,0.94) 0%, rgba(15,23,42,0.45) 24%, rgba(15,23,42,0) 50%);
+}
+.portrait .who { position:relative; z-index:2; }
 .portrait .who .n { font-weight:700; font-size:1.05rem; }
 .portrait .who .r { font-size:13px; color:var(--muted-on-dark); margin-top:3px; }
 
