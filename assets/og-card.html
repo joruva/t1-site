@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1200px;height:630px;overflow:hidden;font-family:'Inter',sans-serif;}
+  .card{position:relative;width:1200px;height:630px;background:#0F172A;overflow:hidden;color:#fff;}
+  .glow{position:absolute;inset:0;background:
+    radial-gradient(70% 90% at 88% -10%, rgba(202,138,4,0.20), transparent 55%),
+    radial-gradient(80% 80% at -10% 120%, rgba(51,65,85,0.55), transparent 60%);}
+  .grid{position:absolute;inset:0;opacity:.5;
+    background-image:linear-gradient(#26344A 1px,transparent 1px),linear-gradient(90deg,#26344A 1px,transparent 1px);
+    background-size:60px 60px;-webkit-mask-image:radial-gradient(75% 65% at 80% 0%,#000 10%,transparent 70%);}
+  .inner{position:relative;height:100%;padding:74px 80px;display:flex;flex-direction:column;justify-content:space-between;}
+  .top{display:flex;align-items:center;gap:22px;}
+  .tile{width:78px;height:78px;flex:0 0 auto;}
+  .lock{display:flex;align-items:baseline;gap:14px;}
+  .lock .mark{font-weight:800;font-size:40px;letter-spacing:-0.05em;color:#fff;}
+  .lock .div{align-self:stretch;width:2px;background:#475569;position:relative;margin:6px 1px;}
+  .lock .div::after{content:"";position:absolute;left:50%;bottom:-5px;width:6px;height:6px;border-radius:50%;background:#CA8A04;transform:translateX(-50%);}
+  .lock .word{font-weight:400;font-size:22px;letter-spacing:0.28em;text-transform:uppercase;color:#E2E8F0;}
+  .eyebrow{color:#E5B43A;font-weight:700;font-size:19px;letter-spacing:0.22em;text-transform:uppercase;margin-bottom:22px;}
+  h1{font-weight:800;font-size:74px;line-height:1.04;letter-spacing:-0.035em;max-width:18ch;}
+  h1 .g{color:#E5B43A;}
+  .bottom{display:flex;align-items:flex-end;justify-content:space-between;}
+  .cred{color:#94A3B8;font-size:24px;font-weight:500;max-width:60ch;}
+  .cred b{color:#E2E8F0;font-weight:600;}
+  .url{color:#E5B43A;font-weight:600;font-size:26px;letter-spacing:0.06em;}
+  .rule{height:3px;width:64px;background:#CA8A04;border-radius:2px;margin-bottom:26px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow"></div><div class="grid"></div>
+  <div class="inner">
+    <div class="top">
+      <svg class="tile" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16223C"/><stop offset="1" stop-color="#0B1220"/></linearGradient></defs>
+        <rect width="64" height="64" rx="14" fill="url(#b)"/>
+        <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="12.75" fill="none" stroke="#CA8A04" stroke-opacity="0.45" stroke-width="1.5"/>
+        <g fill="#fff"><rect x="11" y="16" width="24" height="6.4" rx="2.4"/><rect x="19.8" y="16" width="6.4" height="32" rx="2"/><rect x="38.6" y="16" width="6.4" height="32" rx="2"/><rect x="34.5" y="43.6" width="14.6" height="4.4" rx="2"/></g>
+        <path d="M35.4 23.2 L41.8 16.4" stroke="#fff" stroke-width="5.4" stroke-linecap="round"/>
+        <circle cx="52.4" cy="45.6" r="2.7" fill="#CA8A04"/>
+      </svg>
+      <div class="lock"><span class="mark">T1</span><span class="div"></span><span class="word">Consulting</span></div>
+    </div>
+    <div>
+      <div class="rule"></div>
+      <p class="eyebrow">Product · Manufacturing · Strategy · NPD</p>
+      <h1>From first concept to <span class="g">category leadership.</span></h1>
+    </div>
+    <div class="bottom">
+      <p class="cred">Led by <b>Thomas J. Russo</b> — former President &amp; CEO, First Alert. 30+ years building the products that protect millions.</p>
+      <p class="url">t1consult.com</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

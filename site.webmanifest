@@ -1,0 +1,13 @@
+{
+  "name": "T1 Consulting",
+  "short_name": "T1",
+  "description": "Product, manufacturing, strategy & NPD advisory for companies building physical products.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
